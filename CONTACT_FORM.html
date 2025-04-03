@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Willy Papers</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            /* Add gradient background */
+            background: #74ebd5;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to top, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to top, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            font-family: Arial, sans-serif;
+            margin-top: 50px; /* To make space for the fixed header */
+        }
+
+        /* Fixed Header Styles */
+        .fixed-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #fff;
+            padding: 10px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 9999;
+        }
+
+        .fixed-header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .fixed-header h1 {
+            margin: 0;
+            color: #333;
+        }
+
+        .contact-form-container {
+            background-color: #fff;
+            padding: 30px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 15px; /* Rounded corners */
+            max-width: 600px;
+            margin: 50px auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .form-group label {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .form-control {
+            border-radius: 10px; /* Rounded corners for inputs */
+            padding: 15px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        .form-control:focus {
+            border-color: #4CAF50; /* Green border on focus */
+            box-shadow: 0 0 8px rgba(76, 175, 80, 0.5); /* Green glow on focus */
+        }
+
+        .btn-submit {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            padding: 15px;
+            cursor: pointer;
+            border-radius: 10px; /* Rounded corners for button */
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+
+        .btn-submit:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+
+        .footer-text {
+            text-align: center;
+            margin-top: 50px;
+            color: #777;
+        }
+
+        .company-info {
+            background-color: #e9f7e9;
+            padding: 40px;
+            margin-top: 30px;
+            border-radius: 8px;
+        }
+
+        .company-info h2 {
+            text-align: center;
+            color: #2a6e29;
+        }
+
+        .company-info p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        #success-message {
+            display: none;
+            color: green;
+            text-align: center;
+        }
+    </style>
+        <!-- Fixed Header -->
+        <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>youtube link</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    .center-iframe {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+  </style>
+
+</head>
+<body>
+
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+      <h1 class="sitename">GreenLeaf Division - Willy Paper Co</h1>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#hero">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#portfolio">Portfolio</a></li>
+          <li><a href="index.html#pricing">Pricing</a></li>
+          <li><a href="index.html#team">Team</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li class="dropdown"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <button class="btn-getstarted">Get Started</button>
+
+    </div>
+  </header>
+
+    <div class="container">
+        
+        <div class="contact-form-container">
+            <h1>Contact Us</h1>
+            <!-- Replace the action with your Google Apps Script URL -->
+            <form action="https://script.google.com/macros/s/AKfycbwBY5e8H0dlINQJNCXlLeEWoLrd26B8exo9IkPY44gsXbisVaGN4fU0PCQnmE3VDmlq/exec" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" class="form-control" id="email" name="email" required placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="5" required placeholder="Enter your message"></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+        </div>
+
+        <div id="success-message">
+            Your message has been sent successfully!
+        </div>
+
+        <div class="company-info">
+            <h2>Willy Papers: A Leader in Paper Manufacturing</h2>
+            <p>Founded in 2007, Willy Papers has grown into a leader in the Australian paper manufacturing industry...</p>
+        </div>
+
+        <div class="footer-text">
+            <p>&copy; 2025 Willy Papers - All Rights Reserved</p>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <!-- Add your form submission script here -->
+    <script>
+        document.querySelector("form").addEventListener("submit", function(event) {
+            event.preventDefault();  // Prevent default form submission
+
+            var formData = new FormData(event.target);
+
+            fetch(event.target.action, {
+                method: "POST",
+                body: formData
+            })
+            .then(response => response.text())
+            .then(data => {
+                if (data == "Success") {
+                    document.getElementById("success-message").style.display = "block";  // Show the success message
+                    event.target.reset();  // Reset form fields
+                } else {
+                    alert("Error: " + data);  // Show error if there's a problem
+                }
+            })
+            .catch(error => console.error('Error:', error));
+        });
+    </script>
+
+</body>
+</html>
